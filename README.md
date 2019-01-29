@@ -1,5 +1,6 @@
 # PythonCExtension
-Git to the corresponding Blog article about C Extensions in Python
+Git to the corresponding Blog article about C Extensions in Python:
+
 Have you ever wondered how some calculations (for example in the NumPy library) can be executed very fast although Python (as an interpreted language) is not popular for being the fastest language. This is mainly the case because time critical code within a library is often written in C or C++.
 
 In this short tutorial I will explain how to create a Python module (or package) by writing it in C or C++. The main source for this recipe is the Python Documentation. As an example I will create a math module which has a method for calculating the factorial n!=n*(n-1)*(n-2)… written in C. For this purpose we need two files: A python file called setup.py and our C File cmath.c .
